@@ -17,6 +17,7 @@ import java.util.Base64;
 public class CertificateImportService {
 
     private static final String PREFIX = "certificate";
+
     public String encodeToBase64(MultipartFile multipartFile, String suffix) throws IOException {
         String output;
         File file = toFile(multipartFile, suffix);
